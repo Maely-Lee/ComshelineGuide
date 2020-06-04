@@ -55,9 +55,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             public void onItemClickListener(View v, int position) {
 
                 String recipe_title = recipeList.get(position).getTitle();
+                String recipe_content = recipeList.get(position).getContent();
 
                 Intent intent = new Intent(v.getContext(), Recipe_detail.class);
-                intent.putExtra("recipe_title", recipe_title);
+                intent.putExtra("dTitle", recipe_title);
+                intent.putExtra("dContent", recipe_content);
                 v.getContext().startActivity(intent);
             }
         });

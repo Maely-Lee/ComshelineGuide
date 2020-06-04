@@ -61,13 +61,13 @@ public class Fragment_recipe extends Fragment {
 
         recyclerView = (RecyclerView)viewGroup.findViewById(R.id.recyclerView);
 
+        getRecipe();
+
         recyclerView.setHasFixedSize(true);
         layoutManager = new GridLayoutManager(getActivity(),2);
         recyclerView = (RecyclerView)viewGroup.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.scrollToPosition(0);
-
-        getRecipe();
 
         return viewGroup;
     }

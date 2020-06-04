@@ -31,8 +31,8 @@ public class Recipe_detail extends AppCompatActivity {
         recipe_title = findViewById(R.id.recipe_title_detail);
         recipe_contents = findViewById(R.id.recipe_content);
 
-        String title = intent.getStringExtra("title");
-        String content = intent.getStringExtra("content");
+        String title = intent.getStringExtra("dTitle");
+        String content = intent.getStringExtra("dContent");
 
         recipe_title.setText(title);
         recipe_contents.setText(content);
